@@ -1,29 +1,93 @@
-# Create T3 App
+# Quick Drive
 
-This is a [T3 Stack](https://create.t3.gg/) project bootstrapped with `create-t3-app`.
+A lightweight, highly customizable online drive with a friendly user interface. Quick Drive provides a modern and efficient way to manage your files in the cloud.
 
-## What's next? How do I make an app with this?
+## 🚀 Features
 
-We try to keep this project as simple as possible, so you can start with just the scaffolding we set up for you, and add additional things later when they become necessary.
+- Modern and intuitive user interface
+- File upload and management
+- Secure file storage
+- Real-time updates
+- Responsive design
 
-If you are not familiar with the different technologies used in this project, please refer to the respective docs. If you still are in the wind, please join our [Discord](https://t3.gg/discord) and ask for help.
+## 🛠️ Tech Stack
 
-- [Next.js](https://nextjs.org)
-- [NextAuth.js](https://next-auth.js.org)
-- [Prisma](https://prisma.io)
-- [Drizzle](https://orm.drizzle.team)
-- [Tailwind CSS](https://tailwindcss.com)
-- [tRPC](https://trpc.io)
+- **Framework:** [Next.js 15](https://nextjs.org/) - React framework for production
+- **Language:** [TypeScript](https://www.typescriptlang.org/) - Type-safe JavaScript
+- **Styling:** [Tailwind CSS](https://tailwindcss.com/) - Utility-first CSS framework
+- **Database:** 
+  - [Drizzle ORM](https://orm.drizzle.team/) - TypeScript ORM
+  - [LibSQL](https://libsql.org/) - SQLite-compatible database
+- **Authentication:** (To be implemented)
+- **Deployment:** (To be implemented)
 
-## Learn More
+## 📋 Prerequisites
 
-To learn more about the [T3 Stack](https://create.t3.gg/), take a look at the following resources:
+Before you begin, ensure you have the following installed:
+- [Node.js](https://nodejs.org/) (v18 or higher)
+- [pnpm](https://pnpm.io/) (v10.8.1 or higher)
 
-- [Documentation](https://create.t3.gg/)
-- [Learn the T3 Stack](https://create.t3.gg/en/faq#what-learning-resources-are-currently-available) — Check out these awesome tutorials
+## 🚀 Getting Started
 
-You can check out the [create-t3-app GitHub repository](https://github.com/t3-oss/create-t3-app) — your feedback and contributions are welcome!
+1. **Clone the repository**
+   ```bash
+   git clone https://github.com/yourusername/quick-drive.git
+   cd quick-drive
+   ```
 
-## How do I deploy this?
+2. **Install dependencies**
+   ```bash
+   pnpm install
+   ```
 
-Follow our deployment guides for [Vercel](https://create.t3.gg/en/deployment/vercel), [Netlify](https://create.t3.gg/en/deployment/netlify) and [Docker](https://create.t3.gg/en/deployment/docker) for more information.
+3. **Set up environment variables**
+   ```bash
+   cp .env.example .env
+   ```
+   Update the `.env` file with your configuration values.
+
+4. **Set up the database**
+   ```bash
+   pnpm db:generate  # Generate database migrations
+   pnpm db:push     # Push migrations to database
+   ```
+
+5. **Start the development server**
+   ```bash
+   pnpm dev
+   ```
+   The application will be available at `http://localhost:3000`
+
+## 📝 Available Scripts
+
+- `pnpm dev` - Start development server
+- `pnpm build` - Build for production
+- `pnpm start` - Start production server
+- `pnpm lint` - Run ESLint
+- `pnpm format:write` - Format code with Prettier
+- `pnpm typecheck` - Run TypeScript type checking
+- `pnpm db:studio` - Open Drizzle Studio for database management
+
+## 🤝 Contributing
+
+Contributions are welcome! Please feel free to submit a Pull Request. For major changes, please open an issue first to discuss what you would like to change.
+
+1. Fork the repository
+2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
+
+## 📄 License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## 👥 Authors
+
+- Your Name - Initial work
+
+## 🙏 Acknowledgments
+
+- Thanks to all contributors who have helped this project grow
+- Special thanks to the open-source community for the amazing tools and libraries
+
