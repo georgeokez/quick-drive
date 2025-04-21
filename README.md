@@ -27,6 +27,10 @@ Before you begin, ensure you have the following installed:
 - [Node.js](https://nodejs.org/) (v18 or higher)
 - [pnpm](https://pnpm.io/) (v10.8.1 or higher)
 
+## 🛠️ Helpful Tips
+- Branching strategy: georgedev/<branch-name>
+
+
 ## 🚀 Getting Started
 
 1. **Clone the repository**
