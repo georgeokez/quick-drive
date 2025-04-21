@@ -17,30 +17,23 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v3
 
-      # 2. Install Node.js
-      - name: Setup Node.js
-        uses: actions/setup-node@v3
-        with:
-          node-version: '18' # Adjust to your Node version
-          cache: 'pnpm'
-
-      # 3. Install pnpm
+      # 2. Install pnpm
       - name: Install pnpm
         run: npm install -g pnpm
 
-      # 4. Install dependencies
+      # 3. Install dependencies
       - name: Install dependencies
         run: pnpm install
 
-      # 5. Copy .env.example files recursively
+      # 4. Copy .env.example files recursively
       - name: Copy .env.example files
         shell: bash
         run: find . -type f -name ".env.example" -exec sh -c 'cp "$1" "${1%.*}"' _ {} \;
 
-      # 6. Type check
+      # 5. Type check
       - name: Type Check
         run: pnpm typecheck
 
-      # 7. Lint (Link check)
+      # 6. Lint (Link check)
       - name: Lint Check
         run: pnpm lint
