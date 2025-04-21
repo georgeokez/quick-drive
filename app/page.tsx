@@ -108,9 +108,9 @@ export default function GoogleDriveClone() {
   const [breadcrumbs, setBreadcrumbs] = useState<{ id: string; name: string }[]>([{ id: "root", name: "My Drive" }])
 
   // Get current folder path for display
-  const getCurrentPath = () => {
-    return breadcrumbs.map((item) => item.name).join(" > ")
-  }
+  // const getCurrentPath = () => {
+  //   return breadcrumbs.map((item) => item.name).join(" > ")
+  // }
 
   // Filter files based on current folder
   const getCurrentFolderContents = () => {
